@@ -3,6 +3,9 @@ $(function(){
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        initialSlide: 1,
+        nextArrow: '<button type="button" class="slick-arrow slick-next"><img src="img/next.svg" alt="next"></button>',
+        prevArrow: '<button type="button" class="slick-arrow slick-prev"><img src="img/prev.svg" alt="prev"></button>', // separate slider buttons 
         responsive: [
           {
             breakpoint: 1024,
@@ -17,4 +20,14 @@ $(function(){
           }
         ]
       });
+});
+
+$(function(){
+  $('.bottom-slider').slick({
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      initialSlide: 1,
+    });
 });
